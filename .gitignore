@@ -1,6 +1,12 @@
 # Local .terraform directories
 **/.terraform/*
 
+# Ignore public key
+*key.*
+*kans.*
+
+
+
 # .tfstate files
 *.tfstate
 *.tfstate.*

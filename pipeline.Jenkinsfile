@@ -26,13 +26,13 @@ pipeline {
            // sh 'aws ec2 describe-instances'
            } 
         } 
-        stage('clean workspaces -----------') { 
+        stage('Clean Workspaces -----------') { 
             steps {
               cleanWs()
               sh 'env'
             } //steps
         }    
-        stage('load terraform code -----------') {     
+        stage('Load Terraform code -----------') {     
             steps {
                 checkout([$class: 'GitSCM', 
                 branches: [[name: '*/main']], 
@@ -40,7 +40,7 @@ pipeline {
                 extensions: [[$class: 'CleanCheckout']], 
                 submoduleCfg: [], 
                 userRemoteConfigs: [
-                        [url: 'https://github.com/ezequiellladoce/DESPLIEGE-DE-CONTAINER-DOCKER-NGINX-EN-INSTANCIA-AWS-CON-TERRAFORM-.git', credentialsId: '']
+                        [url: 'https://github.com/ezequiellladoce/Despliege_Terrafom-Ansible_con_Jenkins.git', credentialsId: '']
                         ]])
                 sh 'pwd' 
                 sh 'ls -l'
@@ -49,7 +49,33 @@ pipeline {
         stage('Terraform init----') {
          steps {
             sh 'terraform --version'
-            terraform init -var-file="../variables/dev.tfvars" 
+            sh 'terraform init'
+            } //steps
+        }  //stage
+                stage('Terraform plan----') {
+            steps {
+               sh 'terraform plan'
+            } //steps
+        }  //stage
+        stage('Confirmación de accion') {
+            steps {
+                script {
+                    def userInput = input(id: 'confirm', message: params.ACCION + '?', parameters: [ [$class: 'BooleanParameterDefinition', defaultValue: false, description: 'Apply terraform', name: 'confirm'] ])
+                }
+            }//steps
+        }//stage
+        stage('Terraform apply or destroy ----------------') {
+            steps {
+               sh 'echo "comienza"'
+            script{  
+                if (params.ACCION == "destroy"){
+                         sh ' echo "llego" + params.ACCION'   
+                         sh 'terraform destroy -auto-approve'
+                } else {
+                         sh ' echo  "llego" + params.ACCION'                 
+                         sh ' terraform apply -auto-approve'  
+                }  // if
+            }
             } //steps
         }  //stage
    }  // stages

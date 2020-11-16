@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids      = [aws_security_group.sg_22_80.id]
   associate_public_ip_address = true
   key_name      = "kans3"
-  user_data = " ${file("Bash_install_Grafana.sh")} "
+  user_data = " ${file("Bash_install.sh")} "
 }
 
 output "public_ip" {

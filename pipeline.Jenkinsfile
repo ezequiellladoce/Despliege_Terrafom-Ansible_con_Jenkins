@@ -40,7 +40,7 @@ pipeline {
                 extensions: [[$class: 'CleanCheckout']], 
                 submoduleCfg: [], 
                 userRemoteConfigs: [
-                        [url: 'https://github.com/ezequiellladoce/Despliege_Terrafom-Ansible_con_Jenkins.git', credentialsId: '']
+                        [url: 'https://github.com/ezequiellladoce/Despliege_Terrafom_con_Jenkins.git', credentialsId: '']
                         ]])
                 sh 'pwd' 
                 sh 'ls -l'

@@ -123,6 +123,18 @@ pipeline {
 }//pipeline
 
 ```
+Lo copiamos y pegamos en la sección Script y lo guardamos.
+
+### Ejecutamos la tarea
+
+- En el panel ejecutamos la opción Build with parameters.
+- En el Stage View Obtendremos:
+
+
+
+
+
+
 
 
 

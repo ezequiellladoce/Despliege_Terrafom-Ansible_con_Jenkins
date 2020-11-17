@@ -130,6 +130,10 @@ Lo copiamos y pegamos en la sección Script y lo guardamos.
 - En el panel ejecutamos la opción Build with parameters.
 - En el Stage View Obtendremos:
 
+![J3](https://user-images.githubusercontent.com/67485607/99408552-1e805400-28cf-11eb-8444-d34ac9b3cb26.PNG)
+
+
+
 
 
 

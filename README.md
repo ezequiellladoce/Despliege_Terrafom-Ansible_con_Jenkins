@@ -38,7 +38,7 @@ El objetivo de este repositorio es automátizar desde Jenkins con Plipelines dec
 
 - El codigo que usaremmos es el siguinte:
 
-''' 
+```
 pipeline {
     agent any 
     environment {
@@ -122,7 +122,7 @@ pipeline {
    }  // stages
 }//pipeline
 
-'''
+```
 
 
 

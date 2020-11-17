@@ -28,9 +28,13 @@ El objetivo de este repositorio es automátizar desde Jenkins con Plipelines dec
 
 ### Creamos el pipeline
 
-- Para crear el piplenine vamos a Nueva Tarea
+- Creamos una Nueva Tarea
 
 ![imagen](https://user-images.githubusercontent.com/67485607/99402782-7c5d6d80-28c8-11eb-8305-f64c388394f4.png)
+
+- Vamos a la sección pipeline
+
+
 
 
 

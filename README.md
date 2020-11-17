@@ -34,6 +34,12 @@ El objetivo de este repositorio es automátizar desde Jenkins con Plipelines dec
 
 - Vamos a la sección pipeline
 
+![J2](https://user-images.githubusercontent.com/67485607/99403995-e0346600-28c9-11eb-9c8f-cc8cad75b63f.PNG)
+
+- El codigo que usaremmos es el siguinte:
+
+
+
 
 
 

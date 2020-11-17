@@ -24,4 +24,13 @@ El objetivo de este repositorio es automátizar desde Jenkins con Plipelines dec
 
 - Para la realización de este despliegue tenemos ya desarrollado y probado el codigo terraform en git.
 - Verificamos que el Jenkins tenga instado el plugin te terraform y este correctamente configurado https://medium.com/appgambit/terraform-with-jenkins-pipeline-439babe4095c
-- Configuramos las claves AWS en Jenkins 
+- Configuramos las claves AWS en Jenkins https://www.cyberark.com/resources/threat-research-blog/configuring-and-securing-credentials-in-jenkins
+
+### Creamos el pipeline
+
+- Para crear el piplenine vamos a Nueva Tarea / 
+
+
+
+
+

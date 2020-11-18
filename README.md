@@ -1,6 +1,6 @@
 # Despliege Terraform con Jenkins
 
-El objetivo de este repositorio es automátizar desde Jenkins con Plipelines declarativos el despliege de una infraestructura basica de AWS ( EC2-VPC-IG-SG etc.) tomando el codigo de terraform desde Git.
+El objetivo de este repositorio es automátizar desde Jenkins con Plipelines declarativos el despliegue de una infraestructura basica de AWS ( EC2-VPC-IG-SG etc.) tomando el codigo de terraform desde Git.
 
 ## Pre-requisitos 📋
 
@@ -11,7 +11,7 @@ El objetivo de este repositorio es automátizar desde Jenkins con Plipelines dec
 
 ## Comenzando 🚀
 
-1) Instalalamos Terrafom https://learn.hashicorp.com/tutorials/terraform/install-cli
+1) Instalamos Terrafom https://learn.hashicorp.com/tutorials/terraform/install-cli
 2) Creamos cuenta free tier en AWS  https://aws.amazon.com/
 3) Instalamos AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 4) Creamos usario AWS en la seccion IAM con acceso Programatico y permisos de administrador https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html   

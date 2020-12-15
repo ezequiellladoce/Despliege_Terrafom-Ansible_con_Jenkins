@@ -1,4 +1,4 @@
-# Despliege Terraform con Jenkins
+# Despliegue Terraform con Jenkins
 
 El objetivo de este repositorio es automátizar desde Jenkins con Plipelines declarativos el despliegue de una infraestructura basica de AWS ( EC2-VPC-IG-SG etc.) tomando el codigo de terraform desde Git.
 
